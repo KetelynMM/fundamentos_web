@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/goku_ico.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Portfólio Ket</title>
+</head>
+<body>
+    <!-- Menu da Página-->
+    <nav>
+        <!-- Logo + Texto à esquerda do Menu-->
+        <div class="logo">
+            <img src="assets/images/goku_ico.png" alt="Logo da página - Goku">
+            <span class="titulo">Portfólio Ket</span>
+        </div>
+        <!-- Opções do Menu utilizando Marcadores não ordenados (simbólico) -->
+        <ul>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="contato.html">
+                <li>Contato</li>
+            </a>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo da Página-->
+    <main id="contato">
+        <section id="formulario_mensagem">
+            <h3>Entre em contato comigo</h2>
+        <form>
+            <div class="campos-form">
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" placeholder="Insira o seu nome completo">
+                <div id="txtNome"></div>
+            </div>
+            <div class="campos_form">
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Insira o seu email">
+                <div id="txtEmail"></div>
+            </div>
+            <div class="campos_form">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" type="text" rows="8" cols="30" placeholder="Insira a sua mensagem"></textarea>
+                <div id="txtMensagem"></div>
+            </div>
+            <button type="button">
+                Enviar
+            </button>
+        </form>
+    </section>
+    <section id="formulario_buscacep">
+            <h3>Consultar CEP?</h3>
+            <div class="endereco">
+                <div class="campos_form">
+                    <label for="cep">CEP:</label>
+                    <input id="cep" type="text" placeholder="CEP">
+                <div id="txtCep"></div>
+            </div>
+            <button type="button" onclick="consultarCep()">
+                Consultar
+            </button>
+            <hr>
+            <div class="campos-form">
+                <label for="endereco">Endereço:</label>
+                <textarea id="dados" name="dados" rows="7" placeholder="Busca Cep..."></textarea>
+                <div id="txtCep"></div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da Página-->
+    <footer>
+        <div class="redes_sociais">
+            <a href="https://linkedin.com" target="_blank">
+                <img src="assets/images/linkedin.png" alt="Linkedin">
+            </a>
+            <a href="https://github.com" target="_blank">
+                <img src="assets/images/github.png" alt="GitHub">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="assets/images/instagram.png" alt="Instagram">
+            </a>
+        </div>
+        <p>Desenvolvido por: Ketelyn Medina - 2023 &copy;</p>
+    </footer>
+</body>
+</html>
