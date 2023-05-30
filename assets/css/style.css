@@ -1,5 +1,5 @@
 body{
-    background-color:darkgrey;
+    background-color:rgba(167, 229, 188, 0.535);
 }
 
 /*Estilos da página index.html*/
@@ -27,7 +27,7 @@ body{
 }
 
 #menu li a:hover {
-    color: paleturquoise;
+    color: rgb(200, 39, 73);
 }
 
 .p-30 {

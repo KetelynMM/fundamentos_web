@@ -36,23 +36,25 @@
             <div class="container-contato mb-50">
                 <div>
                     <form>
-                        <div class="campos-form">
+                        
                             <label for="nome">Nome:</label>
-                            <input id="nome" type="text" placeholder="Insira o seu nome completo">
+                            <input id="nome" type="text" onkeyup='validaNome()' placeholder="Insira o seu nome completo">
                             <div id="txtNome"></div>
-                        </div>
-                        <div class="campos_form">
+                        <br>
+
+                        
                             <label for="email">Email:</label>
-                            <input id="email" type="email" placeholder="Insira o seu email">
+                            <input id="email" type="email" onkeyup="validaEmail()" placeholder="Insira o seu email">
                             <div id="txtEmail"></div>
-                        </div>
-                        <div class="campos_form">
+                        <br>
+
+                        
                             <label for="mensagem">Mensagem:</label>
-                            <textarea id="mensagem" type="text" rows="8" cols="30"
-                                placeholder="Insira a sua mensagem"></textarea>
+                            <textarea id="mensagem" onkeyup="validaMensagem()" type="text" rows="5" cols="60" placeholder="Insira a sua mensagem"></textarea>
                             <div id="txtMensagem"></div>
-                        </div>
-                        <button type="button">
+                        <br>
+
+                        <button onclick="enviar()" type="button">
                             Enviar
                         </button>
                     </form>
@@ -97,6 +99,9 @@
         </div>
         <p class="center">Todos os direitos reservados: Ketelyn Medina - 2023 &copy;</p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
+    
 </body>
 
 </html>
